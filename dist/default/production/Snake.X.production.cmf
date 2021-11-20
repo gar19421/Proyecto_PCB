@@ -1,0 +1,715 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\brand\AppData\Local\Temp\sesc.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 4 2007 2007 2 2
+$dist/default/production\Snake.X.production.o
+cinit CODE 0 15 15 1A 2
+text1 CODE 0 287 287 AB 2
+text2 CODE 0 68C 68C 9 2
+text3 CODE 0 552 552 47 2
+text4 CODE 0 50A 50A 48 2
+text5 CODE 0 45C 45C 57 2
+text6 CODE 0 4B3 4B3 57 2
+text7 CODE 0 65A 65A 1F 2
+text8 CODE 0 2F 2F 14A 2
+text9 CODE 0 332 332 65 2
+text10 CODE 0 397 397 65 2
+text11 CODE 0 3FC 3FC 60 2
+text12 CODE 0 626 626 34 2
+text13 CODE 0 599 599 47 2
+text14 CODE 0 5E0 5E0 46 2
+nvBANK0 BANK0 1 62 62 2 1
+maintext CODE 0 179 179 10E 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 21 1
+cstackBANK1 BANK1 1 A0 A0 3 1
+inittext CODE 0 679 679 13 2
+intentry CODE 0 4 4 E 2
+bssBANK0 BANK0 1 41 41 19 1
+idataBANK0 CODE 0 695 695 8 2
+dataBANK0 BANK0 1 5A 5A 8 1
+clrtext CODE 0 69D 69D 8 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 64-6F 1
+RAM A3-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 64-6F 1
+BANK1 A3-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 6A5-1FFF 2
+ENTRY 3-3 2
+ENTRY 6A5-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 6A5-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 6A5-1FFF 2
+STRING 3-3 2
+STRING 6A5-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Snake.X.production.o
+15 cinit CODE >536:C:\Users\brand\AppData\Local\Temp\sesc.s
+15 cinit CODE >539:C:\Users\brand\AppData\Local\Temp\sesc.s
+15 cinit CODE >670:C:\Users\brand\AppData\Local\Temp\sesc.s
+16 cinit CODE >671:C:\Users\brand\AppData\Local\Temp\sesc.s
+17 cinit CODE >672:C:\Users\brand\AppData\Local\Temp\sesc.s
+18 cinit CODE >673:C:\Users\brand\AppData\Local\Temp\sesc.s
+19 cinit CODE >674:C:\Users\brand\AppData\Local\Temp\sesc.s
+1A cinit CODE >675:C:\Users\brand\AppData\Local\Temp\sesc.s
+1B cinit CODE >676:C:\Users\brand\AppData\Local\Temp\sesc.s
+1C cinit CODE >677:C:\Users\brand\AppData\Local\Temp\sesc.s
+1D cinit CODE >678:C:\Users\brand\AppData\Local\Temp\sesc.s
+1E cinit CODE >679:C:\Users\brand\AppData\Local\Temp\sesc.s
+23 cinit CODE >698:C:\Users\brand\AppData\Local\Temp\sesc.s
+24 cinit CODE >699:C:\Users\brand\AppData\Local\Temp\sesc.s
+25 cinit CODE >700:C:\Users\brand\AppData\Local\Temp\sesc.s
+26 cinit CODE >701:C:\Users\brand\AppData\Local\Temp\sesc.s
+2B cinit CODE >707:C:\Users\brand\AppData\Local\Temp\sesc.s
+2B cinit CODE >709:C:\Users\brand\AppData\Local\Temp\sesc.s
+2C cinit CODE >710:C:\Users\brand\AppData\Local\Temp\sesc.s
+4 intentry CODE >314:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+5E0 text14 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+5E0 text14 CODE >119:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+5E8 text14 CODE >121:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+5EC text14 CODE >122:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+603 text14 CODE >123:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+60C text14 CODE >124:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+615 text14 CODE >125:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+61D text14 CODE >128:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+625 text14 CODE >129:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+599 text13 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+599 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+5BA text13 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+5C8 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+5DF text13 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+626 text12 CODE >393:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+626 text12 CODE >394:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+629 text12 CODE >395:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+62A text12 CODE >396:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+62B text12 CODE >397:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+62C text12 CODE >399:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+62E text12 CODE >401:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+62F text12 CODE >403:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+630 text12 CODE >404:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+631 text12 CODE >405:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+633 text12 CODE >406:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+635 text12 CODE >408:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+637 text12 CODE >410:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+643 text12 CODE >411:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+64F text12 CODE >413:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+654 text12 CODE >414:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+659 text12 CODE >416:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3FC text11 CODE >326:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3FC text11 CODE >328:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+403 text11 CODE >329:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+405 text11 CODE >330:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+40B text11 CODE >331:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+40F text11 CODE >332:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+415 text11 CODE >333:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+419 text11 CODE >334:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+41F text11 CODE >335:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+424 text11 CODE >336:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+424 text11 CODE >338:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+428 text11 CODE >340:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+42A text11 CODE >341:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+42B text11 CODE >342:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+42C text11 CODE >343:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+42D text11 CODE >345:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+432 text11 CODE >347:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+433 text11 CODE >348:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+435 text11 CODE >349:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+436 text11 CODE >350:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+437 text11 CODE >351:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+439 text11 CODE >352:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+43E text11 CODE >353:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+444 text11 CODE >357:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+448 text11 CODE >359:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+449 text11 CODE >360:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+44A text11 CODE >361:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+44C text11 CODE >362:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+44D text11 CODE >364:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+452 text11 CODE >366:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+453 text11 CODE >367:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+454 text11 CODE >368:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+455 text11 CODE >369:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+457 text11 CODE >370:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+45A text11 CODE >372:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+45A text11 CODE >387:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+45B text11 CODE >390:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+397 text10 CODE >449:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+398 text10 CODE >450:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+399 text10 CODE >452:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3A0 text10 CODE >453:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3A1 text10 CODE >455:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3A8 text10 CODE >456:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3A9 text10 CODE >458:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3B0 text10 CODE >459:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3B1 text10 CODE >461:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3B8 text10 CODE >462:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3B9 text10 CODE >464:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3C0 text10 CODE >465:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3C1 text10 CODE >467:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3C8 text10 CODE >468:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3C9 text10 CODE >470:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3D0 text10 CODE >471:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3D1 text10 CODE >473:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3D8 text10 CODE >474:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3D9 text10 CODE >477:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3FB text10 CODE >478:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+332 text9 CODE >418:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+333 text9 CODE >419:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+334 text9 CODE >421:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+33B text9 CODE >422:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+33C text9 CODE >424:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+343 text9 CODE >425:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+344 text9 CODE >427:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+34B text9 CODE >428:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+34C text9 CODE >430:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+353 text9 CODE >431:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+354 text9 CODE >433:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+35B text9 CODE >434:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+35C text9 CODE >436:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+363 text9 CODE >437:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+364 text9 CODE >439:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+36B text9 CODE >440:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+36C text9 CODE >442:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+373 text9 CODE >443:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+374 text9 CODE >446:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+396 text9 CODE >447:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2F text8 CODE >242:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2F text8 CODE >244:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+36 text8 CODE >246:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+3B text8 CODE >248:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4D text8 CODE >249:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+5C text8 CODE >250:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+63 text8 CODE >252:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+6C text8 CODE >254:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+80 text8 CODE >255:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+8F text8 CODE >256:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+97 text8 CODE >258:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+A0 text8 CODE >260:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+AA text8 CODE >261:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+B3 text8 CODE >263:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+B6 text8 CODE >264:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+B7 text8 CODE >266:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+C9 text8 CODE >267:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+D8 text8 CODE >268:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+DF text8 CODE >270:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+E8 text8 CODE >272:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+FC text8 CODE >273:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+10B text8 CODE >274:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+113 text8 CODE >276:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+11C text8 CODE >278:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+126 text8 CODE >279:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+12F text8 CODE >282:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+137 text8 CODE >283:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+13C text8 CODE >284:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+145 text8 CODE >285:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+14B text8 CODE >286:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+154 text8 CODE >287:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+15A text8 CODE >288:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+162 text8 CODE >289:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+168 text8 CODE >290:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+171 text8 CODE >291:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+171 text8 CODE >297:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+175 text8 CODE >305:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+177 text8 CODE >306:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+178 text8 CODE >309:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+65A text7 CODE >314:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+65A text7 CODE >316:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+65E text7 CODE >317:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+663 text7 CODE >320:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+667 text7 CODE >321:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+66C text7 CODE >324:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4B3 text6 CODE >449:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4B6 text6 CODE >450:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4B7 text6 CODE >452:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4BC text6 CODE >453:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4BD text6 CODE >455:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4C2 text6 CODE >456:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4C3 text6 CODE >458:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4C8 text6 CODE >459:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4C9 text6 CODE >461:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4CE text6 CODE >462:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4CF text6 CODE >464:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4D4 text6 CODE >465:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4D5 text6 CODE >467:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4DA text6 CODE >468:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4DB text6 CODE >470:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4E0 text6 CODE >471:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4E1 text6 CODE >473:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4E6 text6 CODE >474:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4E7 text6 CODE >477:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+509 text6 CODE >478:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+45C text5 CODE >418:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+45F text5 CODE >419:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+460 text5 CODE >421:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+465 text5 CODE >422:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+466 text5 CODE >424:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+46B text5 CODE >425:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+46C text5 CODE >427:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+471 text5 CODE >428:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+472 text5 CODE >430:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+477 text5 CODE >431:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+478 text5 CODE >433:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+47D text5 CODE >434:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+47E text5 CODE >436:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+483 text5 CODE >437:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+484 text5 CODE >439:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+489 text5 CODE >440:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+48A text5 CODE >442:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+48F text5 CODE >443:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+490 text5 CODE >446:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+4B2 text5 CODE >447:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+50A text4 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+50A text4 CODE >119:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+514 text4 CODE >121:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+518 text4 CODE >122:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+52F text4 CODE >123:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+538 text4 CODE >124:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+541 text4 CODE >125:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+549 text4 CODE >128:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+551 text4 CODE >129:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul32.c
+552 text3 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+552 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+573 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+581 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+598 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+68C text2 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+68C text2 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+694 text2 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\rand.c
+287 text1 CODE >499:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+287 text1 CODE >502:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+28D text1 CODE >503:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+28E text1 CODE >508:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+28F text1 CODE >510:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+290 text1 CODE >512:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+291 text1 CODE >513:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+292 text1 CODE >517:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+293 text1 CODE >518:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+294 text1 CODE >519:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+295 text1 CODE >520:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+296 text1 CODE >521:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+297 text1 CODE >523:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+29B text1 CODE >524:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+29C text1 CODE >528:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+29F text1 CODE >529:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2A0 text1 CODE >531:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2A4 text1 CODE >532:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2A6 text1 CODE >533:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2A7 text1 CODE >534:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2A8 text1 CODE >536:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2A9 text1 CODE >537:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2AB text1 CODE >539:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2AE text1 CODE >540:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2B0 text1 CODE >541:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2B1 text1 CODE >542:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2B2 text1 CODE >544:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2B3 text1 CODE >546:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2B7 text1 CODE >551:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2CB text1 CODE >552:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2D4 text1 CODE >553:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2DD text1 CODE >556:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2F1 text1 CODE >557:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+2FB text1 CODE >558:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+304 text1 CODE >560:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+30F text1 CODE >563:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+31B text1 CODE >564:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+327 text1 CODE >566:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+32C text1 CODE >567:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+331 text1 CODE >570:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+179 maintext CODE >113:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+179 maintext CODE >115:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+17E maintext CODE >120:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+185 maintext CODE >121:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+186 maintext CODE >124:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+18B maintext CODE >126:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+190 maintext CODE >128:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+19C maintext CODE >129:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+1AA maintext CODE >130:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+1B7 maintext CODE >131:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+1C5 maintext CODE >132:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+1D2 maintext CODE >133:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+1E1 maintext CODE >134:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+1E1 maintext CODE >138:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+1EF maintext CODE >140:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+1FF maintext CODE >141:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+20F maintext CODE >143:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+218 maintext CODE >144:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+221 maintext CODE >145:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+229 maintext CODE >149:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+22F maintext CODE >150:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+233 maintext CODE >153:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+238 maintext CODE >156:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+23A maintext CODE >160:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+23B maintext CODE >161:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+23C maintext CODE >162:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+23D maintext CODE >171:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+243 maintext CODE >174:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+24B maintext CODE >177:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+24D maintext CODE >188:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+252 maintext CODE >191:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+254 maintext CODE >194:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+255 maintext CODE >195:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+257 maintext CODE >205:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+25C maintext CODE >208:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+264 maintext CODE >211:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+265 maintext CODE >212:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+266 maintext CODE >213:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+268 maintext CODE >222:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+268 maintext CODE >224:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+27E maintext CODE >225:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+281 maintext CODE >228:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+281 maintext CODE >230:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+283 maintext CODE >234:C:\Users\brand\Downloads\UVG\SEXTO SEMESTRE\PCBs\Proyecto\Snake.X\main.c
+69D clrtext CODE >685:C:\Users\brand\AppData\Local\Temp\sesc.s
+69D clrtext CODE >686:C:\Users\brand\AppData\Local\Temp\sesc.s
+69E clrtext CODE >687:C:\Users\brand\AppData\Local\Temp\sesc.s
+69E clrtext CODE >688:C:\Users\brand\AppData\Local\Temp\sesc.s
+69F clrtext CODE >689:C:\Users\brand\AppData\Local\Temp\sesc.s
+6A0 clrtext CODE >690:C:\Users\brand\AppData\Local\Temp\sesc.s
+6A1 clrtext CODE >691:C:\Users\brand\AppData\Local\Temp\sesc.s
+6A2 clrtext CODE >692:C:\Users\brand\AppData\Local\Temp\sesc.s
+6A3 clrtext CODE >693:C:\Users\brand\AppData\Local\Temp\sesc.s
+6A4 clrtext CODE >694:C:\Users\brand\AppData\Local\Temp\sesc.s
+679 inittext CODE >644:C:\Users\brand\AppData\Local\Temp\sesc.s
+679 inittext CODE >645:C:\Users\brand\AppData\Local\Temp\sesc.s
+67A inittext CODE >646:C:\Users\brand\AppData\Local\Temp\sesc.s
+67B inittext CODE >647:C:\Users\brand\AppData\Local\Temp\sesc.s
+67C inittext CODE >648:C:\Users\brand\AppData\Local\Temp\sesc.s
+67D inittext CODE >655:C:\Users\brand\AppData\Local\Temp\sesc.s
+67D inittext CODE >656:C:\Users\brand\AppData\Local\Temp\sesc.s
+682 inittext CODE >657:C:\Users\brand\AppData\Local\Temp\sesc.s
+683 inittext CODE >658:C:\Users\brand\AppData\Local\Temp\sesc.s
+684 inittext CODE >659:C:\Users\brand\AppData\Local\Temp\sesc.s
+685 inittext CODE >660:C:\Users\brand\AppData\Local\Temp\sesc.s
+686 inittext CODE >661:C:\Users\brand\AppData\Local\Temp\sesc.s
+687 inittext CODE >662:C:\Users\brand\AppData\Local\Temp\sesc.s
+688 inittext CODE >663:C:\Users\brand\AppData\Local\Temp\sesc.s
+689 inittext CODE >664:C:\Users\brand\AppData\Local\Temp\sesc.s
+68A inittext CODE >665:C:\Users\brand\AppData\Local\Temp\sesc.s
+68B inittext CODE >666:C:\Users\brand\AppData\Local\Temp\sesc.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_semillaDown 4B 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_semillaLeft 4A 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_i 45 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_x 62 0 BANK0 1 nvBANK0 dist/default/production\Snake.X.production.o
+___latbits 2 0 ABS 0 - dist/default/production\Snake.X.production.o
+i1filas@value 70 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+_semillaUp 4C 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+__Hspace_0 6A5 0 ABS 0 - -
+__Hspace_1 A3 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+i1_filas 664 0 CODE 0 text9 dist/default/production\Snake.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_semillaRigth 49 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_IOCB 96 0 ABS 0 - dist/default/production\Snake.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\Snake.X.production.o
+_WPUB 95 0 ABS 0 - dist/default/production\Snake.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\brand\AppData\Local\Temp\sesc.o
+_coso 41 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_main 2F2 0 CODE 0 maintext dist/default/production\Snake.X.production.o
+_rand AA4 0 CODE 0 text3 dist/default/production\Snake.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Snake.X.production.o
+i1_rand B32 0 CODE 0 text13 dist/default/production\Snake.X.production.o
+start 24 0 CODE 0 init C:\Users\brand\AppData\Local\Temp\sesc.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__size_of_rand 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+?___lmul 2C 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+i1___lmul@multiplicand 74 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\Snake.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\sesc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\sesc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\sesc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\sesc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\sesc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\brand\AppData\Local\Temp\sesc.o
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\Snake.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Snake.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__size_ofi1_rand 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_leftFlag 51 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\Snake.X.production.o
+__end_of___lmul AA4 0 CODE 0 text4 dist/default/production\Snake.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+i1filas@fila 73 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+_longitud 5F 0 BANK0 1 dataBANK0 dist/default/production\Snake.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\brand\AppData\Local\Temp\sesc.o
+___stacklo 0 0 ABS 0 - C:\Users\brand\AppData\Local\Temp\sesc.o
+__size_ofi1___lmul 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__size_of_filas 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__size_of_setup 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__size_of_srand 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+i1___lmul@product 79 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+start_initialization 2A 0 CODE 0 cinit dist/default/production\Snake.X.production.o
+__end_of_reiniciar CB4 0 CODE 0 text12 dist/default/production\Snake.X.production.o
+__size_of_reiniciar 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+clear_ram0 D3A 0 CODE 0 clrtext dist/default/production\Snake.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\Snake.X.production.o
+__size_of_TMR0_interrupt 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+i1_columnas 72E 0 CODE 0 text10 dist/default/production\Snake.X.production.o
+_reiniciar C4C 0 CODE 0 text12 dist/default/production\Snake.X.production.o
+_IOCB_interrupt 7F8 0 CODE 0 text11 dist/default/production\Snake.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\brand\AppData\Local\Temp\sesc.o
+i1___lmul BC0 0 CODE 0 text14 dist/default/production\Snake.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 5E 0 CODE 0 cinit -
+columnas@columna 2F 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+__Hstack 0 0 STACK 2 stack -
+i1columnas@value 70 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__end_ofi1___lmul C4C 0 CODE 0 text14 dist/default/production\Snake.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 2A 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_PORTAbits 5 0 ABS 0 - dist/default/production\Snake.X.production.o
+_PORTBbits 6 0 ABS 0 - dist/default/production\Snake.X.production.o
+_PORTCbits 7 0 ABS 0 - dist/default/production\Snake.X.production.o
+_PORTDbits 8 0 ABS 0 - dist/default/production\Snake.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\Snake.X.production.o
+__size_ofi1_filas 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 24 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+columnas@value 2C 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 24 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 62 0 BANK0 1 nvBANK0 dist/default/production\Snake.X.production.o
+___lmul A14 0 CODE 0 text4 dist/default/production\Snake.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 6A5 0 ABS 0 - -
+__S1 A3 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_end 58 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_isr CB4 0 CODE 0 text7 dist/default/production\Snake.X.production.o
+i1___lmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+filas@fila 2F 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\Snake.X.production.o
+__end_ofi1_columnas 7F8 0 CODE 0 text10 dist/default/production\Snake.X.production.o
+__end_of_IOCB_interrupt 8B8 0 CODE 0 text11 dist/default/production\Snake.X.production.o
+_rigthFlag 50 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+__end_of_isr CF2 0 CODE 0 text7 dist/default/production\Snake.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\brand\AppData\Local\Temp\sesc.o
+_inicio 59 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+filas@value 2C 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+__pdataBANK0 5A 0 BANK0 1 dataBANK0 dist/default/production\Snake.X.production.o
+__size_of___lmul 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext10 72E 0 CODE 0 text10 dist/default/production\Snake.X.production.o
+__ptext11 7F8 0 CODE 0 text11 dist/default/production\Snake.X.production.o
+__ptext12 C4C 0 CODE 0 text12 dist/default/production\Snake.X.production.o
+__ptext13 B32 0 CODE 0 text13 dist/default/production\Snake.X.production.o
+__ptext14 BC0 0 CODE 0 text14 dist/default/production\Snake.X.production.o
+__pmaintext 2F2 0 CODE 0 maintext dist/default/production\Snake.X.production.o
+___lmul@multiplier 2C 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+?_rand 39 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+__end_ofi1_filas 72E 0 CODE 0 text9 dist/default/production\Snake.X.production.o
+srand@x 2C 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+?i1___lmul 70 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+?i1_rand 20 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+_upFlag 53 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_prevFlagDirec 4D 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_semillaC 56 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+_semillaF 57 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+init_fetch0 CF2 0 CODE 0 inittext dist/default/production\Snake.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__Lend_init 24 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_cColumna 60 0 BANK0 1 dataBANK0 dist/default/production\Snake.X.production.o
+end_of_initialization 56 0 CODE 0 cinit dist/default/production\Snake.X.production.o
+__Hintentry 24 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 50E 0 CODE 0 text1 dist/default/production\Snake.X.production.o
+__ptext2 D18 0 CODE 0 text2 dist/default/production\Snake.X.production.o
+__ptext3 AA4 0 CODE 0 text3 dist/default/production\Snake.X.production.o
+__ptext4 A14 0 CODE 0 text4 dist/default/production\Snake.X.production.o
+__ptext5 8B8 0 CODE 0 text5 dist/default/production\Snake.X.production.o
+__ptext6 966 0 CODE 0 text6 dist/default/production\Snake.X.production.o
+__ptext7 CB4 0 CODE 0 text7 dist/default/production\Snake.X.production.o
+__ptext8 5E 0 CODE 0 text8 dist/default/production\Snake.X.production.o
+__ptext9 664 0 CODE 0 text9 dist/default/production\Snake.X.production.o
+_banderaMulti 4F 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+i1columnas@columna 73 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_ofi1_rand BC0 0 CODE 0 text13 dist/default/production\Snake.X.production.o
+__size_of_columnas 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+_TMR0_interrupt 5E 0 CODE 0 text8 dist/default/production\Snake.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_ofi1_columnas 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__end_of__initialization 56 0 CODE 0 cinit dist/default/production\Snake.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 D2A 0 CODE 0 idataBANK0 dist/default/production\Snake.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+___lmul@product 35 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+___lmul@multiplicand 30 0 BANK0 1 cstackBANK0 dist/default/production\Snake.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Snake.X.production.o
+__Hend_init 2A 0 CODE 0 end_init -
+init_ram0 CFA 0 CODE 0 inittext dist/default/production\Snake.X.production.o
+__end_of_main 50E 0 CODE 0 maintext dist/default/production\Snake.X.production.o
+__end_of_rand B32 0 CODE 0 text3 dist/default/production\Snake.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\Snake.X.production.o
+__end_of_filas 966 0 CODE 0 text5 dist/default/production\Snake.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\Snake.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\Snake.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\Snake.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\Snake.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\Snake.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\Snake.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\Snake.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\Snake.X.production.o
+__end_of_setup 664 0 CODE 0 text1 dist/default/production\Snake.X.production.o
+__end_of_srand D2A 0 CODE 0 text2 dist/default/production\Snake.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_cFila 61 0 BANK0 1 dataBANK0 dist/default/production\Snake.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Snake.X.production.o
+_filas 8B8 0 CODE 0 text5 dist/default/production\Snake.X.production.o
+_randx 5A 0 BANK0 1 dataBANK0 dist/default/production\Snake.X.production.o
+_setup 50E 0 CODE 0 text1 dist/default/production\Snake.X.production.o
+_srand D18 0 CODE 0 text2 dist/default/production\Snake.X.production.o
+_columnas 966 0 CODE 0 text6 dist/default/production\Snake.X.production.o
+__end_of_TMR0_interrupt 2F2 0 CODE 0 text8 dist/default/production\Snake.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Snake.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__size_of_IOCB_interrupt 0 0 ABS 0 - dist/default/production\Snake.X.production.o
+_downFlag 52 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+__initialization 2A 0 CODE 0 cinit dist/default/production\Snake.X.production.o
+__pbssBANK0 41 0 BANK0 1 bssBANK0 dist/default/production\Snake.X.production.o
+__end_of_columnas A14 0 CODE 0 text6 dist/default/production\Snake.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 44 1
+cstackBANK1 1 A0 A0 3 1
+intentry 0 4 8 6A1 2
+reset_vec 0 0 0 3 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
